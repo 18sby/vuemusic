@@ -10,7 +10,7 @@
          <p class="author">{{ currentUrl.songinfo.author }}</p>
        </div>
        <router-link to="/search" tag="div" ><i class="iconfont icon-sousuo right"></i></router-link>
-     </div>
+     </div>update1
    </div>
 
    <div class="song-info">

@@ -10,10 +10,12 @@ import NewsList from '../pages/musiclist/news_list'
 import MoreList from '../pages/morelist'
 import MusicPlay from '../pages/musicplay'
 import ArtistsDetails from '../pages/artistsDetails/artistsDetails'
+import { type } from 'os';
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path:'/musicplay',
@@ -23,7 +25,9 @@ export default new Router({
     {
       path: '/',
       name: 'index',
+      // 测试konva
       redirect:'home',
+      // redirect:'/konva',
       component: Index,
       children:[
         {
@@ -65,5 +69,10 @@ export default new Router({
         },
       ]
     },
+    {
+      path: '/konva',
+      name: 'konva',
+      component: () => import('@/pages/konva.vue')
+    }
   ]
 })

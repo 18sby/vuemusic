@@ -33,5 +33,11 @@ html{font-size:16px;}
 body{ margin:0 auto;max-width:640px; min-width:320px;color:#555;background:#f1f1f1;height:100%;}
 a{color: #222;text-decoration: none}
 .router-link-active{color: rgb(0, 183, 255) !important;}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
 
 </style>

@@ -65,5 +65,15 @@ export default new Router({
         },
       ]
     },
+    {
+      path: '/konva',
+      name: 'konva',
+      component: () => import('@/pages/konva.vue')
+    },
+    {
+      path: '/practiceVueApi',
+      name: 'practiceVueApi',
+      component: () => import('@/pages/practiceVueApi')
+    }
   ]
 })
